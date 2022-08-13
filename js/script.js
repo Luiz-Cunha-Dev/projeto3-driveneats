@@ -15,6 +15,9 @@ if (vector1 !== null){
 }
     const vector2 = document.querySelector(numeroPrato + ' .oculto');
     vector2.classList.add('visivel')
+
+    finalizarPedido()
+
 }
 
 
@@ -37,6 +40,8 @@ if (vector1 !== null){
 }
     const vector2 = document.querySelector(numeroBebida + ' .oculto');
     vector2.classList.add('visivel')
+
+    finalizarPedido()
 }
 
 
@@ -59,6 +64,8 @@ if (vector1 !== null){
 }
     const vector2 = document.querySelector(numeroSobremesa + ' .oculto');
     vector2.classList.add('visivel')
+
+    finalizarPedido()
 }
 
 
@@ -69,7 +76,9 @@ function finalizarPedido(){
     const sobremesaSelecionada = document.querySelector('.sobremesas .opcao-selecionada');
 
     if (pratoSelecionado !== null && bebidaSelecionada !== null && sobremesaSelecionada !== null) {
-    const botão = Document.querySelector('.barra-inferior . finalizar')
-    botão.classList.add('fundo-verde')
+    const botao = document.querySelector('.barra-inferior .finalizar')
+    botao.classList.add('fundo-verde')
+    botao.innerHTML = "Fechar Pedido";
+
     }
 }
