@@ -1,0 +1,273 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <link rel="stylesheet" href="css/estilo.css" />
+    <link rel="stylesheet" href="css/reset.css" />
+    <link rel="icon" href="imagens/logoDrivenEats.PNG" />
+    <title>DrivenEats</title>
+    <style>
+      @import url("https://fonts.googleapis.com/css2?family=Righteous&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap");
+    </style>
+  </head>
+  <body>
+    <div class="topo">
+      <p class="titulo-topo">DrivenEats</p>
+      <p class="descricao-topo">Sua comida em 6 minutos</p>
+    </div>
+    <div class="container">
+      <div class="titulo">
+        <p>Primeiro, seu prato</p>
+      </div>
+
+      <div class="pratos">
+        <div class="opcao prato1" onclick="selecionarPrato('.prato1')">
+          <img src="imagens/feijoada.jpeg" />
+          <span class="nome-opcao">Feijoada</span><br />
+          <span class="descricao-opcao"
+            >Com arroz, torresmo, couve e farofa</span
+          ><br />
+          <span class="flex">
+            <span class="valor-opcao">R$ 14,90</span>
+            <img class="oculto" src="imagens/Vector.png" />
+          </span>
+        </div>
+        <div class="opcao prato2" onclick="selecionarPrato('.prato2')">
+          <img src="imagens/frango_yin_yang 1.png" />
+          <span class="nome-opcao">Frango Yin Yang</span><br />
+          <span class="descricao-opcao">Com batata frita, salada e molho</span
+          ><br />
+          <span class="flex">
+            <span class="valor-opcao">R$ 14,90</span>
+            <img class="oculto" src="imagens/Vector.png" />
+          </span>
+        </div>
+        <div class="opcao prato3" onclick="selecionarPrato('.prato3')">
+          <img src="imagens/frangoParmegiana.jpg" />
+          <span class="nome-opcao">Parmegiana</span><br />
+          <span class="descricao-opcao"
+            >Frango a Parmegiana, com batata e arroz</span
+          ><br />
+          <span class="flex">
+            <span class="valor-opcao">R$ 14,90</span>
+            <img class="oculto" src="imagens/Vector.png" />
+          </span>
+        </div>
+        <div class="opcao prato4" onclick="selecionarPrato('.prato4')">
+          <img src="imagens/strogonoffFrango.jpg" />
+          <span class="nome-opcao">Strogonoff</span><br />
+          <span class="descricao-opcao">Frango com batata palha e arroz</span
+          ><br />
+          <span class="flex">
+            <span class="valor-opcao">R$ 14,90</span>
+            <img class="oculto" src="imagens/Vector.png" />
+          </span>
+        </div>
+        <div class="opcao prato5" onclick="selecionarPrato('.prato5')">
+          <img src="imagens/yakisoba.jpg" />
+          <span class="nome-opcao">Yakisoba</span><br />
+          <span class="descricao-opcao">Yakisoba receita tradicional</span
+          ><br />
+          <span class="flex">
+            <span class="valor-opcao">R$ 14,90</span>
+            <img class="oculto" src="imagens/Vector.png" />
+          </span>
+        </div>
+        <div class="opcao prato6" onclick="selecionarPrato('.prato6')">
+          <img src="imagens/macarrao.png" />
+          <span class="nome-opcao">Macarrão</span><br />
+          <span class="descricao-opcao">Macarrão com carne moida</span><br />
+          <span class="flex">
+            <span class="valor-opcao">R$ 14,90</span>
+            <img class="oculto" src="imagens/Vector.png" />
+          </span>
+        </div>
+        <div class="opcao prato7" onclick="selecionarPrato('.prato7')">
+          <img src="imagens/tacos.jpg" />
+          <span class="nome-opcao">Tacos</span><br />
+          <span class="descricao-opcao">Com molho da casa e guacamole</span
+          ><br />
+          <span class="flex">
+            <span class="valor-opcao">R$ 14,90</span>
+            <img class="oculto" src="imagens/Vector.png" />
+          </span>
+        </div>
+      </div>
+
+      <div class="titulo">
+        <p>Agora, sua bebida</p>
+      </div>
+
+      <div class="bebidas">
+        <div class="opcao bebida1" onclick="selecionarBebida('.bebida1')">
+          <img src="imagens/coca.jpg" />
+          <span class="nome-opcao">Coca-Cola</span><br />
+          <span class="descricao-opcao">Lata 350ml</span><br />
+          <span class="flex">
+            <span class="valor-opcao">R$ 5,90</span>
+            <img class="oculto" src="imagens/Vector.png" />
+          </span>
+        </div>
+        <div class="opcao bebida2" onclick="selecionarBebida('.bebida2')">
+          <img src="imagens/cocaZero.jpg" />
+          <span class="nome-opcao">Coca-Zero</span><br />
+          <span class="descricao-opcao">Lata 350ml</span><br />
+          <span class="flex">
+            <span class="valor-opcao">R$ 5,90</span>
+            <img class="oculto" src="imagens/Vector.png" />
+          </span>
+        </div>
+        <div class="opcao bebida3" onclick="selecionarBebida('.bebida3')">
+          <img src="imagens/pepsi.jpg" />
+          <span class="nome-opcao">Pepsi</span><br />
+          <span class="descricao-opcao">Lata 350ml</span><br />
+          <span class="flex">
+            <span class="valor-opcao">R$ 5,90</span>
+            <img class="oculto" src="imagens/Vector.png" />
+          </span>
+        </div>
+        <div class="opcao bebida4" onclick="selecionarBebida('.bebida4')">
+          <img src="imagens/sprite.jpg" />
+          <span class="nome-opcao">Sprite</span><br />
+          <span class="descricao-opcao">Lata 350ml</span><br />
+          <span class="flex">
+            <span class="valor-opcao">R$ 5,90</span>
+            <img class="oculto" src="imagens/Vector.png" />
+          </span>
+        </div>
+        <div class="opcao bebida5" onclick="selecionarBebida('.bebida5')">
+          <img src="imagens/fantaLaranja.jpg" />
+          <span class="nome-opcao">Fanta Laranja</span><br />
+          <span class="descricao-opcao">Lata 350ml</span><br />
+          <span class="flex">
+            <span class="valor-opcao">R$ 5,90</span>
+            <img class="oculto" src="imagens/Vector.png" />
+          </span>
+        </div>
+        <div class="opcao bebida6" onclick="selecionarBebida('.bebida6')">
+          <img src="imagens/guaranaJesus.jpg" />
+          <span class="nome-opcao">Guaraná Jesus</span><br />
+          <span class="descricao-opcao">Lata 350ml</span><br />
+          <span class="flex">
+            <span class="valor-opcao">R$ 5,90</span>
+            <img class="oculto" src="imagens/Vector.png" />
+          </span>
+        </div>
+        <div class="opcao bebida7" onclick="selecionarBebida('.bebida7')">
+          <img src="imagens/guaranaAntarctica.jpg" />
+          <span class="nome-opcao">Guaraná Antarctica</span><br />
+          <span class="descricao-opcao">Lata 350ml</span><br />
+          <span class="flex">
+            <span class="valor-opcao">R$ 5,90</span>
+            <img class="oculto" src="imagens/Vector.png" />
+          </span>
+        </div>
+      </div>
+
+      <div class="titulo">
+        Por fim, sua sobremesa
+      </div>
+
+      <div class="sobremesas">
+        <div
+          class="opcao sobremesa1"
+          onclick="selecionarSobremesa('.sobremesa1')"
+        >
+          <img src="imagens/pudim.png" />
+          <span class="nome-opcao">Pudim</span><br />
+          <span class="descricao-opcao">Pudim de leite condensado</span><br />
+          <span class="flex">
+            <span class="valor-opcao">R$ 5,90</span>
+            <img class="oculto" src="imagens/Vector.png" />
+          </span>
+        </div>
+        <div
+          class="opcao sobremesa2"
+          onclick="selecionarSobremesa('.sobremesa2')"
+        >
+          <img src="imagens/musseChocolate.jpg" />
+          <span class="nome-opcao">Musse Chocolate</span><br />
+          <span class="descricao-opcao">Musse de chocolate tradicional</span
+          ><br />
+          <span class="flex">
+            <span class="valor-opcao">R$ 5,90</span>
+            <img class="oculto" src="imagens/Vector.png" />
+          </span>
+        </div>
+        <div
+          class="opcao sobremesa3"
+          onclick="selecionarSobremesa('.sobremesa3')"
+        >
+          <img src="imagens/musseMaracuja.jpg" />
+          <span class="nome-opcao">Musse Maracuja</span><br />
+          <span class="descricao-opcao">Musse de maracuja tradicional</span
+          ><br />
+          <span class="flex">
+            <span class="valor-opcao">R$ 5,90</span>
+            <img class="oculto" src="imagens/Vector.png" />
+          </span>
+        </div>
+        <div
+          class="opcao sobremesa4"
+          onclick="selecionarSobremesa('.sobremesa4')"
+        >
+          <img src="imagens/tortaChocolate.jpg" />
+          <span class="nome-opcao">Torta de Chocolate</span><br />
+          <span class="descricao-opcao">Com pedaços de chocolate crocante</span
+          ><br />
+          <span class="flex">
+            <span class="valor-opcao">R$ 5,90</span>
+            <img class="oculto" src="imagens/Vector.png" />
+          </span>
+        </div>
+        <div
+          class="opcao sobremesa5"
+          onclick="selecionarSobremesa('.sobremesa5')"
+        >
+          <img src="imagens/tortaLimao.jpg" />
+          <span class="nome-opcao">Torta de Limão</span><br />
+          <span class="descricao-opcao">Com raspas de limão por cima</span
+          ><br />
+          <span class="flex">
+            <span class="valor-opcao">R$ 5,90</span>
+            <img class="oculto" src="imagens/Vector.png" />
+          </span>
+        </div>
+        <div
+          class="opcao sobremesa6"
+          onclick="selecionarSobremesa('.sobremesa6')"
+        >
+          <img src="imagens/gelatina.jpg" />
+          <span class="nome-opcao">Gelatina Morango</span><br />
+          <span class="descricao-opcao">Com pedaços de morango</span><br />
+          <span class="flex">
+            <span class="valor-opcao">R$ 5,90</span>
+            <img class="oculto" src="imagens/Vector.png" />
+          </span>
+        </div>
+        <div
+          class="opcao sobremesa7"
+          onclick="selecionarSobremesa('.sobremesa7')"
+        >
+          <img src="imagens/panquecaFit.jpg" />
+          <span class="nome-opcao">Panqueca Fit</span><br />
+          <span class="descricao-opcao">Panqueca de aveia com banana</span
+          ><br />
+          <span class="flex">
+            <span class="valor-opcao">R$ 5,90</span>
+            <img class="oculto" src="imagens/Vector.png" />
+          </span>
+        </div>
+      </div>
+      <div class="barra-inferior">
+        <button class="finalizar">
+          <p>Selecione os 3 itens</p>
+          <p>para fechar o pedido</p>
+        </button>
+      </div>
+    </div>
+   <script src="js/script.js"></script>
+  </body>
+</html>
