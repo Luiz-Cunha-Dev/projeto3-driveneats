@@ -337,6 +337,11 @@
     height: 52px;
   }
 
+  .botao-final a{
+    color: #50D074; 
+    text-decoration: none;
+  }
+
   .cancelar{
     display: flex;
     justify-content: center;

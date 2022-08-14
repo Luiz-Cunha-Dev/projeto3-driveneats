@@ -115,6 +115,10 @@ function Nomes (){
     nome3.innerHTML = sobremesaSelecionada.innerHTML
 }
 
+
+
+
+
 function preco (){
     const pratoSelecionado = document.querySelector('.pratos .opcao-selecionada .valor-opcao'); 
     const bebidaSelecionada = document.querySelector('.bebidas .opcao-selecionada .valor-opcao');
@@ -133,11 +137,37 @@ function preco (){
     const valorSoma3 = parseFloat(sobremesaSelecionada.innerHTML.replace(",", "."));
     
     const soma = valorSoma1 + valorSoma2 + valorSoma3;
-    const somaArredondada = parseFloat(soma.toFixed(2));
+    const somaArredondada = soma.toFixed(2);
     const somaString = String(somaArredondada)
     const somaStringComVirgula = somaString.replace(".", ",");
     const total = document.querySelector('.preco-total');
-console.log(somaStringComVirgula)
+
     total.innerHTML= 'R$ ' + somaStringComVirgula
 
-}       
+}           
+
+
+
+function botaoWhats (){
+    const nome = prompt("Qual o seu nome?")
+    const endereco = prompt("Qual o seu endereço?")
+    const total = document.querySelector('.preco-total');
+    const pratoSelecionado = document.querySelector('.pratos .opcao-selecionada .nome-opcao'); 
+    const bebidaSelecionada = document.querySelector('.bebidas .opcao-selecionada .nome-opcao');
+    const sobremesaSelecionada = document.querySelector('.sobremesas .opcao-selecionada .nome-opcao');
+
+    const texto = "Olá, gostaria de fazer o pedido:" + "\n" + 
+    "- Prato: " + pratoSelecionado.innerHTML + "\n" + 
+    "- Bebida: " + bebidaSelecionada.innerHTML + "\n" + 
+    "- Sobremesa: " + sobremesaSelecionada.innerHTML + "\n" + 
+    "Total: " + total.innerHTML + "\n" + "\n" + 
+    "Nome: " + nome + "\n" + 
+    "Endereço: " + endereco
+                 
+    const textoEncode = encodeURIComponent(texto)
+                 
+
+    const link = document.querySelector('.botao-final a')
+    link.href = "https://wa.me/5519987292994?text=" + textoEncode
+    
+}
