@@ -90,8 +90,20 @@
     line-height: 18px;
     color: #a6a6a6;
     margin-top: 4px;
+    height: 35px;
   }
-  
+
+ 
+.dinheiro{
+  font-family: "Roboto", sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 19px;
+    color: #000000;
+    margin-top: 2px;
+}
+
   .valor-opcao {
     display: inline-block;
     font-family: "Roboto", sans-serif;
@@ -100,8 +112,9 @@
     font-size: 16px;
     line-height: 19px;
     color: #000000;
-    margin-top: 5px;
-    margin-right: 50px;
+    margin-top: 2px;
+    margin-left: 5px;
+    margin-right: 30px;
     width: 80px;
   }
   
@@ -160,6 +173,7 @@
     text-align: center;
     letter-spacing: 0.018em;
     color: #ffffff;
+    cursor: pointer;
   }
   
   .opcao-selecionada {
@@ -177,4 +191,205 @@
   
   .fundo-verde{
     background-color: #32B72F;
+  }
+
+  .tela-final{
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(255, 255, 255, 0.9);
+    z-index: 2;
+   
+  }
+
+  .alinhamento-final{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .quadro-final{
+    background: #50D074;
+    box-shadow: 0px 0px 10px 1px rgba(0, 0, 0, 0.25);
+    border-radius: 9px;
+    width: 377px;
+    height: 351px;
+    z-index: 3;
+  }
+
+ 
+  .titulo-quadro{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 27px;
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 22px;
+    line-height: 26px;
+    text-align: center;
+    color: #FFFFFF;
+    margin-top: 21px;
+    margin-bottom: 28px;
+  }
+
+  .escolha1{
+
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 22px;
+    line-height: 26px;
+    letter-spacing: 0.018em;
+    color: #FFFFFF;
+  }
+
+  .preco1{
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 22px;
+    line-height: 26px;
+    letter-spacing: 0.018em;
+    color: #FFFFFF;
+    right: 25px;
+    top: 196px;
+  }
+
+  .escolha2{
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 22px;
+    line-height: 26px;
+    letter-spacing: 0.018em;
+    color: #FFFFFF;
+  }
+
+  .preco2{
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 22px;
+    line-height: 26px;
+    letter-spacing: 0.018em;
+    color: #FFFFFF;
+  }
+
+  .escolha3{
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 22px;
+    line-height: 26px;
+    letter-spacing: 0.018em;
+    color: #FFFFFF;
+  }
+
+  .preco3{
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 22px;
+    line-height: 26px;
+    letter-spacing: 0.018em;
+    color: #FFFFFF;
+  }
+
+  .total{
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 22px;
+    line-height: 26px;
+    letter-spacing: 0.018em;
+    color: #FFFFFF;
+  }
+
+  .preco-total{
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 22px;
+    line-height: 26px;
+    letter-spacing: 0.018em;
+    color: #FFFFFF;
+  }
+
+  .botao-final{
+    background-color: #FFFFFF;
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 22px;
+    line-height: 26px;
+    letter-spacing: 0.018em;
+    color: #50D074;
+    border-radius: 100px;
+    border: thin;
+    width: 333px;
+    height: 52px;
+  }
+
+  .cancelar{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 20px;
+    line-height: 23px;
+    letter-spacing: 0.018em;
+    color: #FFFFFF;
+    width: 100%;
+    height: 52px;
+    
+  }
+
+  .linha1{
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 13px;
+    margin-left: 26px;
+    margin-right: 25px;
+  }
+
+  .linha2{
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 13px;
+    margin-left: 26px;
+    margin-right: 25px;
+  }
+
+  .linha3{
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 13px;
+    margin-left: 26px;
+    margin-right: 25px;
+  }
+
+  .linha4{
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 24px;
+    margin-left: 26px;
+    margin-right: 25px;
+  }
+
+  .div-botao{
+    display: flex;
+    justify-content: center;
+  }
+
+  .pointer{
+    cursor: pointer;
   }
