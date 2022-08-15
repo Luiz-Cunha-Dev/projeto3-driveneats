@@ -86,8 +86,14 @@ function finalizarPedido(){
 
 
 function quadroFinal (){
+    const pratoSelecionado = document.querySelector('.pratos .opcao-selecionada'); 
+    const bebidaSelecionada = document.querySelector('.bebidas .opcao-selecionada');
+    const sobremesaSelecionada = document.querySelector('.sobremesas .opcao-selecionada');
+
+    if (pratoSelecionado !== null && bebidaSelecionada !== null && sobremesaSelecionada !== null) {
     const finalizar = document.querySelector('.tela-final')
     finalizar.classList.remove('oculto')
+    }
 }
 
 
